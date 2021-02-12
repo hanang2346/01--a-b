@@ -1,38 +1,6 @@
-basic.showString("Hello!")
-basic.forever(function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . # . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . . # . .
-        . # . # .
-        . . # . .
-        . . . . .
-        `)
-    basic.showLeds(`
-        . . # . .
-        . # . # .
-        # . . . #
-        . # . # .
-        . . # . .
-        `)
-    basic.showLeds(`
-        . # . # .
-        # . . . #
-        . . . . .
-        # . . . #
-        . # . # .
-        `)
-    basic.showLeds(`
-        # . . . #
-        . . . . .
-        . . . . .
-        . . . . .
-        # . . . #
-        `)
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Heart)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.TShirt)
 })
